@@ -1,4 +1,5 @@
-const HyperbeamPromise = import("@hyperbeam/web")
+import AFRAME from "aframe"
+import Hyperbeam from "@hyperbeam/web"
 
 AFRAME.registerComponent('hyperbeam', {
   async init() {
@@ -36,7 +37,6 @@ AFRAME.registerComponent('hyperbeam', {
     }
 
     // Render the Hyperbeam computer
-    const Hyperbeam = (await HyperbeamPromise).default
     const hb = await Hyperbeam(hbcontainer, embedURL, {
       frameCb: (frame) => {
         if (!texture.image) {
