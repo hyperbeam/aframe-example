@@ -75,7 +75,7 @@ AFRAME.registerComponent('hyperbeam', {
       })
     }
     // At the moment there's no "mousemove" event
-    // https://aframe.io/docs/1.3.0/components/cursor.html#events
+    // https://aframe.io/docs/1.4.0/components/cursor.html#events
     this.el.addEventListener('mousedown', handlePointer)
     this.el.addEventListener('mouseup', handlePointer)
     window.addEventListener('wheel', (e) => {
